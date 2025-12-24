@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Explora la tienda oficial de GalardonesMC y adquiere kits exclusivos.">
+	<title>Tienda · GalardonesMC</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+	<main class="store-main" role="main">
+		<header class="hero-header store-hero">
+			<div class="hero-logo">
+				<img src="media/server-icon.png.png" alt="Logotipo del servidor GalardonesMC">
+			</div>
+			<div class="hero-copy">
+				<p class="tag">Tienda oficial</p>
+				<h1>Adquiere tu kit definitivo</h1>
+				<p class="subtitle">Todos los rangos y kits se gestionan manualmente mediante tickets. Consulta los valores, elige tu combo y confirma en Discord.</p>
+			</div>
+		</header>
+
+		<section class="intro-card" aria-label="Información de la tienda">
+			<div>
+				<h2>Cierra tu compra con soporte directo</h2>
+				<p>
+					Cada kit se entrega de forma personalizada dentro del servidor para asegurar que todo quede registrado. 
+					Nuestro equipo revisa comprobantes, valida el stock y te acompaña durante todo el proceso.
+				</p>
+			</div>
+			<ul class="intro-list">
+				<li>Pagos verificados antes de la entrega.</li>
+				<li>Desglose completo de ventajas y valores.</li>
+				<li>Soporte disponible 24/7 en Discord.</li>
+			</ul>
+			<a class="ticket-link" href="https://discord.gg/rPnyKqUdWE" target="_blank" rel="noopener">
+				Abrir ticket en Discord
+			</a>
+		</section>
+
+		<section class="kits" aria-label="Galería de kits">
+			<div class="kits-header">
+				<h2>Kits destacados</h2>
+				<p>Explora las opciones disponibles. Cada carta incluye los valores oficiales mostrados en la imagen del juego.</p>
+			</div>
+			<div class="carousel">
+                <button class="carousel-control prev" type="button" aria-label="Kit anterior">&#10094;</button>
+                <div class="carousel-window">
+                    <div class="carousel-track">
+                        
+                        <article class="kit-card">
+                            <button class="kit-image" type="button" data-image="kits/kitsvip.png" aria-label="Ver kit VIP a tamaño completo">
+                                <img src="kits/kitsvip.png" alt="Kit VIP con sus valores y recompensas">
+                            </button>
+                            <div class="kit-info">
+                                <h3>Kit VIP <span style="font-size: 0.8em; color: #FFAA00;">($3.000 CLP / $4 USD)</span></h3>
+                                <p>El impulso esencial. Incluye comandos vitales como <strong>/back</strong>, armadura de <strong>Hierro (Prot 2)</strong>, herramientas de Diamante y <strong>Protección 20x20</strong>.</p>
+                            </div>
+                        </article>
+
+                        <article class="kit-card">
+                            <button class="kit-image" type="button" data-image="kits/kitskick.png" aria-label="Ver kit Kick a tamaño completo">
+                                <img src="kits/kitskick.png" alt="Kit Kick con equipamiento y valores">
+                            </button>
+                            <div class="kit-info">
+                                <h3>Kit Kick <span style="font-size: 0.8em; color: #55FF55;">(Suscriptor)</span></h3>
+                                <p>Exclusividad y vuelo. Acceso a <strong>/fly</strong> en Spawn, cosméticos (/hat), armadura de <strong>Hierro (Prot 4)</strong> y herramientas Diamante (Eficiencia 3).</p>
+                            </div>
+                        </article>
+
+                        <article class="kit-card">
+                            <button class="kit-image" type="button" data-image="kits/kitsgalardonner.png" aria-label="Ver kit Galardonner a tamaño completo">
+                                <img src="kits/kitsgalardonner.png" alt="Kit Galardonner con valores premium">
+                            </button>
+                            <div class="kit-info">
+                                <h3>Kit Galardonner <span style="font-size: 0.8em; color: #AA00AA;">($5.000 CLP / $6 USD)</span></h3>
+                                <p>Para el jugador experto. Equipamiento completo de <strong>Diamante (Prot 3)</strong>, Shulker Box incluida y una <strong>Protección expandida de 50x50</strong>.</p>
+                            </div>
+                        </article>
+
+                        <article class="kit-card">
+                            <button class="kit-image" type="button" data-image="kits/kitsgalardonner%2B.png" aria-label="Ver kit Galardonner Plus a tamaño completo">
+                                <img src="kits/kitsgalardonner%2B.png" alt="Kit Galardonner Plus con beneficios exclusivos">
+                            </button>
+                            <div class="kit-info">
+                                <h3>Kit Galardonner+ <span style="font-size: 0.8em; color: #55FFFF;">($10.000 CLP / $11 USD)</span></h3>
+                                <p>La supremacía total. <strong>Armadura de Netherite</strong>, <strong>Pico Custom (Eficiencia 6)</strong>, vuelo en mundo Recursos y <strong>Protección masiva 100x100</strong>.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <button class="carousel-control next" type="button" aria-label="Kit siguiente">&#10095;</button>
+            </div>
+		</section>
+
+		<section class="store-steps" aria-label="Proceso de compra">
+			<article class="step-card">
+				<h3>1. Elige tu kit</h3>
+				<p>Revisa valores, compara beneficios y define si necesitas complementos adicionales.</p>
+			</article>
+			<article class="step-card">
+				<h3>2. Abre un ticket</h3>
+				<p>En Discord te pediremos comprobante y usuario en el servidor para reservar el kit.</p>
+			</article>
+			<article class="step-card">
+				<h3>3. Recibe tu entrega</h3>
+				<p>Coordinamos la entrega dentro del juego y confirmamos que todo esté correcto.</p>
+			</article>
+		</section>
+
+		<div class="actions">
+			<a class="cta" href="https://discord.gg/rPnyKqUdWE" target="_blank" rel="noopener">
+				<strong>Discord</strong>
+				<span>Abre un ticket</span>
+			</a>
+			<a class="cta" href="index.html">
+				<strong>Volver al inicio</strong>
+				<span>Regresa a la portada</span>
+			</a>
+		</div>
+
+		<footer>
+			© 2025 GalardonesMC · Catálogo oficial de kits
+		</footer>
+	</main>
+
+	<div class="modal" data-modal>
+		<div class="modal-backdrop" data-modal-close></div>
+		<figure class="modal-content">
+			<button class="modal-close" type="button" data-modal-close aria-label="Cerrar imagen ampliada">×</button>
+			<img src="" alt="Kit ampliado" data-modal-image>
+			<figcaption data-modal-caption></figcaption>
+		</figure>
+	</div>
+
+	<script>
+		const track = document.querySelector('.carousel-track');
+		const viewport = track?.parentElement;
+		const prevBtn = document.querySelector('.carousel-control.prev');
+		const nextBtn = document.querySelector('.carousel-control.next');
+		if (track && viewport && prevBtn && nextBtn) {
+			let slides = Array.from(track.children);
+			const firstClone = slides[0].cloneNode(true);
+			const lastClone = slides[slides.length - 1].cloneNode(true);
+			firstClone.classList.add('carousel-clone');
+			lastClone.classList.add('carousel-clone');
+			track.appendChild(firstClone);
+			track.insertBefore(lastClone, slides[0]);
+			slides = Array.from(track.children);
+
+			let currentSlide = 1;
+			let isTransitioning = false;
+
+			const setPosition = (animated) => {
+				const slideWidth = viewport.clientWidth;
+				track.style.transition = animated ? 'transform .45s ease' : 'none';
+				track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+			};
+
+			const goToSlide = (target) => {
+				if (isTransitioning) return;
+				isTransitioning = true;
+				currentSlide = target;
+				setPosition(true);
+			};
+
+			track.addEventListener('transitionend', () => {
+				if (!slides[currentSlide]) return;
+				if (slides[currentSlide].classList.contains('carousel-clone')) {
+					currentSlide = currentSlide === 0 ? slides.length - 2 : 1;
+					setPosition(false);
+				}
+				requestAnimationFrame(() => { isTransitioning = false; });
+			});
+
+			prevBtn.addEventListener('click', () => {
+				goToSlide(currentSlide - 1);
+			});
+
+			nextBtn.addEventListener('click', () => {
+				goToSlide(currentSlide + 1);
+			});
+
+			window.addEventListener('resize', () => {
+				setPosition(false);
+			});
+
+			setPosition(false);
+		}
+
+		const modal = document.querySelector('[data-modal]');
+		const modalImg = document.querySelector('[data-modal-image]');
+		const modalCaption = document.querySelector('[data-modal-caption]');
+		const modalClose = document.querySelectorAll('[data-modal-close]');
+		const imageButtons = document.querySelectorAll('.kit-image');
+		const openModal = (src, alt) => {
+			modalImg.src = src;
+			modalImg.alt = alt || 'Kit ampliado';
+			modalCaption.textContent = alt || '';
+			modal.classList.add('is-open');
+			document.body.style.overflow = 'hidden';
+		};
+		const closeModal = () => {
+			modal.classList.remove('is-open');
+			modalImg.src = '';
+			document.body.style.overflow = '';
+		};
+		imageButtons.forEach(btn => {
+			btn.addEventListener('click', () => {
+				const img = btn.querySelector('img');
+				openModal(btn.dataset.image || img.src, img.alt);
+			});
+		});
+		modalClose.forEach(btn => btn.addEventListener('click', closeModal));
+		modal.addEventListener('click', event => {
+			if (event.target === modal) closeModal();
+		});
+		document.addEventListener('keydown', event => {
+			if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+		});
+	</script>
+</body>
+</html>

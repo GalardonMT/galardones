@@ -3,100 +3,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Adquiere rangos VIP o Galardonner en nuestro servidor y disfruta de beneficios exclusivos.">
-  <title>Tienda de Rangos</title>
-  <style>
-    :root {
-      --bg: #0f1724;
-      --card: #0b1220;
-      --accent: #5865F2; /* color estilo Discord */
-      --text: #e6eef8;
-      --muted: #9aa6bf;
-    }
-    * { box-sizing: border-box }
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(180deg, #071021 0%, var(--bg) 100%);
-      color: var(--text);
-      padding: 24px;
-    }
-    .card {
-      width: 100%;
-      max-width: 760px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius: 12px;
-      padding: 36px;
-      border: 1px solid rgba(255,255,255,0.03);
-      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-      text-align: center;
-    }
-    .card img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      transition: max-width 0.3s ease;
-    }
-    /* Imagen más grande en pantallas de escritorio */
-    @media (min-width: 768px) {
-      .card img {
-        max-width: 90%;
-      }
-    }
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(20px, 4vw, 34px);
-      letter-spacing: -0.4px;
-    }
-    p {
-      margin: 0 0 20px;
-      color: var(--muted);
-      font-size: 16px;
-      line-height: 1.5;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 10px;
-      background: linear-gradient(180deg, var(--accent), #4752d9);
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      box-shadow: 0 6px 18px rgba(88,101,242,0.18);
-      transition: transform .12s ease, box-shadow .12s ease;
-    }
-    .btn:active {
-      transform: translateY(1px);
-    }
-    .btn:hover {
-      box-shadow: 0 10px 30px rgba(88,101,242,0.26);
-    }
-    .meta {
-      margin-top: 12px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    @media (max-width: 420px) {
-      .card { padding: 20px }
-    }
-  </style>
+  <meta name="description" content="Conecta al servidor Galardones, copia la IP y compra rangos exclusivos.">
+  <title>GalardonesMC · Servidor Oficial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="card" role="main"> 
-    <h1>Consigue rango exclusivo de Galardones</h1>
-    <img src="media/imagen2.png" alt="Imagen de rangos del servidor">
-    <h1>¿Quieres obtener un rango exclusivo?</h1>
-    <p>En nuestro servidor puedes adquirir rangos especiales como <strong>VIP</strong> y <strong>Galardonner</strong>. Estos rangos te ofrecen ventajas únicas, recompensas exclusivas y más facilidades para progresar en tu aventura.</p>
-    <p>Para comprarlos, únete a nuestro Discord y envíame un mensaje directo a "galardon". También puedes resolver tus dudas en la comunidad antes de realizar la compra.</p>
-    <a class="btn" href="https://discord.gg/QFf4HMsAqj" target="_blank" rel="noopener noreferrer">Unirme al Discord</a>
+  <main role="main">
+    <header class="hero-header">
+      <div class="hero-logo">
+        <img src="media/server-icon.png.png" alt="Logotipo del servidor GalardonesMC">
+      </div>
+      <h1>GalardonesMC</h1>
+      <div class="hero-copy">
+        <p class="tag">Servidor Élite</p>
+        <p class="subtitle">Vive una experiencia única, fresca y con una mirada del pasado en nuestro servidor Survival, totalmente compatible con Minecraft Java 1.20+ y Bedrock.</p>
+      </div>
+    </header>
+
+    <section class="ip-card" aria-label="Direcciones del servidor">
+      <h2>Conecta al servidor</h2>
+      <div class="ip-row">
+        <div>
+          <p class="edition">Java Edition</p>
+          <p class="address">galardones.net</p>
+        </div>
+        <button class="copy-btn" data-ip="galardones.net" type="button">Copiar IP</button>
+      </div>
+      <div class="ip-row">
+        <div>
+          <p class="edition">Bedrock Edition</p>
+          <p class="address">galardones.net</p>
+          <p class="port">Puerto 19146</p>
+        </div>
+        <button class="copy-btn" data-ip="galardones.net:19146" type="button">Copiar IP</button>
+      </div>
+    </section>
+
+    <div class="actions">
+      <a class="cta" href="https://discord.gg/rPnyKqUdWE" target="_blank" rel="noopener">
+        <strong>Discord</strong>
+        <span>Soporte y compras</span>
+      </a>
+      <a class="cta" href="tienda.html">
+        <strong>Tienda</strong>
+        <span>Rangos y cosméticos</span>
+      </a>
+      <a class="cta" href="#" target="_blank" rel="noopener">
+        <strong>Wiki</strong>
+        <span>Guías para nuevos</span>
+      </a>
+    </div>
+
+    <footer>
+      © 2025 GalardonesMC · Todos los derechos reservados.
+    </footer>
   </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.copy-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const ip = btn.dataset.ip;
+        try {
+          await navigator.clipboard.writeText(ip);
+          const original = btn.textContent;
+          btn.textContent = 'Copiado';
+          setTimeout(() => btn.textContent = original, 1800);
+        } catch (err) {
+          console.error('No se pudo copiar la IP', err);
+        }
+      });
+    });
+  </script>
 </body>
 </html>
